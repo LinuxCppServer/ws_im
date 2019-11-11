@@ -8,6 +8,8 @@ https://www.cnblogs.com/chyingp/p/websocket-deep-in.html；
 3) CFrameworkService等单例模式不是线程安全的；
 4) 暂时没用到BOOST/SGI STL智能指针；
 5) 暂时没用到任何其他payload协议，如xml/json/protobuff等，只是用纯文本模拟消息转发；
+6) 每个独立的模块实现文件都在同一目录；
+
    由于时间关系，上述暂时不规范或不安全的用法，后期会及时commit
 # 功能
 1) epoll IO复用的网络框架；
@@ -18,7 +20,7 @@ https://www.cnblogs.com/chyingp/p/websocket-deep-in.html；
 # 开发环境
   VS2015(不支持跨平台编译构建，感兴趣可用VS2017 + SSH + linux跨平台开发调试)
 # 运行环境
-  ws_server（ws IM服务）、ws_client(压力测试client工具)
+  ws_server（ws IM服务）、ws_client(压力测试client工具) 请移步Linux环境编译构建，方法见下方。
   
 # 构建
 ws IM服务：
