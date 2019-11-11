@@ -8,6 +8,7 @@ https://www.cnblogs.com/chyingp/p/websocket-deep-in.html；
 3) CFrameworkService等单例模式不是线程安全的；
 4) 暂时没用到BOOST/SGI STL智能指针；
 5) 暂时没用到任何其他payload协议，如xml/json/protobuff等，只是用纯文本模拟消息转发；
+   由于时间关系，上述暂时不规范或不安全的用法，后期会及时commit
 # 功能
 1) epoll IO复用的网络框架；
 2) 支持websocket的握手、应用包解包;
