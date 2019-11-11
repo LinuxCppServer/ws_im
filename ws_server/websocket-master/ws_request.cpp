@@ -53,7 +53,8 @@ int CWSRequest::stepFin(const char *msg, int &pos)
 }
 
 //opcode
-int CWSRequest::stepOpCode(const char *msg, int &pos){
+int CWSRequest::stepOpCode(const char *msg, int &pos)
+{
 	int reason = -1;
 	if (msg)
 	{
@@ -66,7 +67,8 @@ int CWSRequest::stepOpCode(const char *msg, int &pos){
 }
 
 //Mask
-int CWSRequest::stepMask(const char *msg, int &pos) {
+int CWSRequest::stepMask(const char *msg, int &pos) 
+{
 	int reason = -1;
 	if (msg)
 	{
@@ -77,7 +79,8 @@ int CWSRequest::stepMask(const char *msg, int &pos) {
 }
 
 //Payload length
-int CWSRequest::stepPayloadSize(const char *msg, int &pos) {
+int CWSRequest::stepPayloadSize(const char *msg, int &pos) 
+{
 
 	int reason = -1;
 	if (msg)

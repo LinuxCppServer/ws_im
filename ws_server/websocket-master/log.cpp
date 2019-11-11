@@ -31,7 +31,8 @@ CLogger::~CLogger()
 	#endif
 }
 
-void CLogger::createLogFile(){
+void CLogger::createLogFile()
+{
 	if (mfp != NULL)
 	{
 		fclose(mfp);
@@ -52,7 +53,8 @@ void CLogger::createLogFile(){
 }
 
 //fixme: 线程不安全的
-CLogger *CLogger::getLogger(){
+CLogger *CLogger::getLogger()
+{
 	if(NULL == mPtrLog)
 	{
 		mPtrLog = new CLogger();

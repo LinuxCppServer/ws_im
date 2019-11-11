@@ -52,8 +52,7 @@ void CWSHandler::penddingRespHeader(char *request)
 	}
 }
 
-//解析http头部，并返回json消息
-//fixme: 重写该函数
+//解析http头部
 int CWSHandler::parseRequest()
 {
 	std::istringstream s(mMsgBuff);
